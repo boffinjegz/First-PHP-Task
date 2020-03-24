@@ -2,17 +2,17 @@
 Creating A Contact Form that Submits to a file.
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boffinjegz Contact Form</title>
-</head>
-<body>
-<img src="C:\Users\USER\Documents\BOFFINJEGZ\SHIELD LOGO PROJECT\Transparent\boffin logo.png" width="10%" />    
-<h3> Contact Me! </h3>
-	<form action="processform.php" method="POST">
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Boffinjegz Contact Form</title>
+	</head>
+	<body>
+	<img src="C:\Users\USER\Documents\BOFFINJEGZ\SHIELD LOGO PROJECT\Transparent\boffin logo.png" width="10%" />    
+	<h3> Contact Me! </h3>
+		<form action="processform.php" method="POST">
 	
     <p>
 	<label for="first_name"> First Name</label><br/>
@@ -59,15 +59,15 @@ Creating A Contact Form that Submits to a file.
 	<button type="submit"> send message </button>
 	
 	
-</form>
-<p>
-Feel free to exclusively express yourself...<br/>
-I love Feedback!
-</p>
-</body>
-</html>
+	</form>
+	<p>
+	Feel free to exclusively express yourself...<br/>
+	I love Feedback!
+	</p>
+	</body>
+	</html>
 
-
+	Processform.php (PHP CODE)
 	<?php 
 	print_r($_POST);
 	echo file_put_contents("$_POST[first_name] $_POST[last_name].txt", $_POST);
