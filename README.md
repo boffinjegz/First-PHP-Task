@@ -7,7 +7,7 @@ Creating A Contact Form that Submits to a file.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boffinjegz Contact Me!! form</title>
+    <title>Boffinjegz Contact Form</title>
 </head>
 <body>
 <img src="C:\Users\USER\Documents\BOFFINJEGZ\SHIELD LOGO PROJECT\Transparent\boffin logo.png" width="10%" />    
@@ -68,9 +68,8 @@ I love Feedback!
 </html>
 
 
+	<?php 
+	print_r($_POST);
+	echo file_put_contents("$_POST[first_name] $_POST[last_name].txt", $_POST);
 
-<?php 
-print_r($_POST);
-echo file_put_contents("$_POST[first_name] $_POST[last_name].txt", $_POST);
-
-?>
+	?>
