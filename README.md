@@ -67,6 +67,8 @@ Creating A Contact Form that Submits to a file.
 	</body>
 	</html>
 
+
+
 	Processform.php (PHP CODE)
 	<?php 
 	print_r($_POST);
